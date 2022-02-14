@@ -6,25 +6,29 @@ import Blogs from "./components/blogs";
 import Gallary from "./components/gallary";
 import Contactme from "./components/contactme";
 import NotFound from "./components/404";
-import { Route, Switch, Redirect } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 import NavBar from "./components/navbar";
+import Footer from "./components/footer";
+import Header from "./components/header";
 
 function App() {
   return (
     <>
+      <Header />
       <NavBar />
 
       <div className="App">
-        <Switch>
-          <Route path="/projects" component={Projects} />
-          <Route path="/blogs" component={Blogs} />
-          <Route path="/gallary" component={Gallary} />
-          <Route path="/contactme" component={Contactme} />
-          <Route path="/not-found" component={NotFound} />
-          <Route path="/" exact component={Home} />
-          <Redirect to="/not-found" />
-        </Switch>
+        <Routes>
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/blogs" element={<Blogs />} />
+          <Route path="/gallary" element={<Gallary />} />
+          <Route path="/contactme" element={<Contactme />} />
+          <Route path="/not-found" element={<NotFound />} />
+          <Route path="/" exact element={<Home />} />
+          <Route path="*" element={<Navigate to="/not-found" replace />} />
+        </Routes>
       </div>
+      <Footer />
     </>
   );
 }

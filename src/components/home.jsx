@@ -1,9 +1,25 @@
 import React, { Component } from "react";
+import Image from "../resource/twl.jpg";
 
 class Home extends Component {
-  state = {};
+  state = {
+    // imgURL: "./resource/twl.jpg",
+  };
+
   render() {
-    return <h1>Hello Home</h1>;
+    return (
+      <>
+        <h1>Weilan Tao</h1>
+        <img src={Image} alt="emilytao" />
+        <p>
+          I major in Computer Engineering @ the University of Waterloo. I am a
+          passionate Java developer profession in web development. I love to try
+          various cool technologies. In my spare time, I enjoy charcoal
+          painting, music and building personal projects. Please feel free to
+          contact me!
+        </p>
+      </>
+    );
   }
 }
 
