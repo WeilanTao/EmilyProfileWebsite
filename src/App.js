@@ -28,6 +28,7 @@ function App() {
           <Route path="*" element={<Navigate to="/not-found" replace />} />
         </Routes>
       </div>
+
       <Footer />
     </>
   );
