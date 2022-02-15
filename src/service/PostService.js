@@ -13,10 +13,13 @@ const PostService = {
               isPublic
               title
               createdAt
+              photo {
+                url
+              }
             }
           }
         }
-      }
+      }      
     `
     );
 

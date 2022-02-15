@@ -21,19 +21,24 @@ class Blogs extends Component {
   }
 
   #renderPost(p) {
-    if (p.node.isPublic !== false)
+    if (p.node.isPublic !== false) {
+      const { photo } = p.node;
+      const { url } = photo[0] || "";
+
       return (
-        <div>
+        <div key={p.node.id}>
           <h3>{p.node.title}</h3>
-          <h3>{p.node.content}</h3>
+          <h4>{p.node.content}</h4>
+          <img src={url} alt="" />
         </div>
       );
+    }
   }
   #getPostArray() {
     PostService.getPosts()
       .then((response) => {
         console.log(response);
-        const newPosts = response;
+        const newPosts = response.reverse();
         this.setState({ posts: newPosts });
       })
       .catch((err) => alert(err))
