@@ -3,7 +3,6 @@ import "./App.css";
 import Home from "./components/home";
 import Projects from "./components/projects";
 import Blogs from "./components/blogs";
-import Gallary from "./components/gallary";
 import Contactme from "./components/contactme";
 import NotFound from "./components/404";
 import { Route, Routes, Navigate } from "react-router-dom";
@@ -21,7 +20,6 @@ function App() {
         <Routes>
           <Route path="/projects" element={<Projects />} />
           <Route path="/blogs" element={<Blogs />} />
-          <Route path="/gallary" element={<Gallary />} />
           <Route path="/contactme" element={<Contactme />} />
           <Route path="/not-found" element={<NotFound />} />
           <Route path="/" exact element={<Home />} />
