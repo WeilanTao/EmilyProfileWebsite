@@ -35,7 +35,7 @@ class Projects extends Component {
   #getProjects() {
     PorjectService.getProjects()
       .then((response) => {
-        console.log(response);
+        // console.log(response);
         const newProjects = response.reverse();
         this.setState({ projects: newProjects });
       })
