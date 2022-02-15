@@ -1,7 +1,5 @@
 import { request } from "graphql-request";
 
-const graphqlAPI = process.env.NEXT_PUBLIC_GRAPHCMS_ENDPOINT;
-
 const PostService = {
   getPosts: async () => {
     const posts = await request(
@@ -22,7 +20,6 @@ const PostService = {
     `
     );
 
-    console.log(posts.postsConnection.edges);
     return posts.postsConnection.edges;
   },
 };
