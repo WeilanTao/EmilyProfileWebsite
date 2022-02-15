@@ -34,10 +34,10 @@ class Blogs extends Component {
       );
     }
   }
+
   #getPostArray() {
     PostService.getPosts()
       .then((response) => {
-        console.log(response);
         const newPosts = response.reverse();
         this.setState({ posts: newPosts });
       })
