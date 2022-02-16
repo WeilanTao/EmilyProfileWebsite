@@ -29,7 +29,7 @@ class Blogs extends Component {
         <div key={p.node.id} className="blog">
           <div className="content title">{p.node.title}</div>
           <div className="content date">{p.node.displayDate}</div>
-          <img src={url} alt="" className="img content" />
+          {photo[0] && <img src={url} alt="" className="img content" />}
           <div
             className="content content"
             contentEditable="true"
@@ -43,7 +43,7 @@ class Blogs extends Component {
   #getPostArray() {
     PostService.getPosts()
       .then((response) => {
-        const newPosts = response.reverse();
+        const newPosts = response;
         this.setState({ posts: newPosts });
       })
       .catch((err) => alert(err))
