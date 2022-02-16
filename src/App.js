@@ -14,7 +14,7 @@ import ReactCanvasNest from "react-canvas-nest";
 function App() {
   return (
     <div className="App">
-      {/* <ReactCanvasNest
+      <ReactCanvasNest
         className="canvasNest"
         config={{
           pointColor: " 0,0,0 ",
@@ -24,7 +24,7 @@ function App() {
           count: "130",
         }}
         style={{ zIndex: -99 }}
-      /> */}
+      />
       <div className="Wrapper">
         <Header />
         <NavBar />

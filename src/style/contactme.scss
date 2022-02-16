@@ -1,3 +1,5 @@
+@use "../globalConst" as g;
+
 .ulList {
   padding: 10%;
   line-height: 60px;
@@ -8,6 +10,7 @@
 
 .link,
 .link:hover {
+  font-family: g.$font_primary;
   text-decoration: none;
   color: white;
 }

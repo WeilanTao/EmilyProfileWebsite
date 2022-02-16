@@ -23,10 +23,11 @@ class Blogs extends Component {
       const { photo } = p.node;
       const { url } = photo[0] || "";
       const htmlString = p.node.content.html || "";
+
       return (
         <div key={p.node.id} className="blog">
           <div className="content title">{p.node.title}</div>
-          {/* <div className="content date">{p.node.displayDate}</div> */}
+          <div className="content date">{p.node.displayDate}</div>
           {/* Hey this is the if condition in react - html!!!!! */}
           {photo[0] && <img src={url} alt="" className="img content" />}
           <div

@@ -29,9 +29,9 @@ class Projects extends Component {
               alt=""
               className="coverImg"
             />
-            <div class="card-body" class="textArea">
-              <h5 class="card-title">{p.node.title}</h5>
-              <p class="card-text">{p.node.description}</p>
+            <div class="textArea">
+              <p className="card-title">{p.node.title}</p>
+              <p className="card-text">{p.node.description}</p>
               <a
                 href={p.node.githublink}
                 className="codeButton"

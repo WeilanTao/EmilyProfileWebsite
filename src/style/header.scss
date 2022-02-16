@@ -1,6 +1,11 @@
+@use "../globalConst" as g;
+
 .header {
   text-align: center;
   font-size: 50px;
   padding-top: 15px;
   padding-bottom: 15px;
+
+  color: g.$font_primary_color;
+  font-family: g.$font_primary;
 }
