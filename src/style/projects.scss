@@ -4,6 +4,7 @@ $cardwidth: 200px;
 
 .projectContainer {
   display: flex;
+  flex-wrap: wrap;
 }
 .coverImg {
   height: 150px;

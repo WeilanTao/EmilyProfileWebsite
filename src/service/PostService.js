@@ -16,10 +16,12 @@ const PostService = {
               photo {
                 url
               }
+              displayDate
             }
           }
         }
-      }      
+      }
+      
     `
     );
 

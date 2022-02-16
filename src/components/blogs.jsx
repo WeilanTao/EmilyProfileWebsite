@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import PostService from "../service/PostService";
+import "../style/blog.scss";
 
 class Blogs extends Component {
   state = {
@@ -13,10 +14,9 @@ class Blogs extends Component {
     // this.#getPostArray();
 
     return (
-      <>
-        <h1>Blogs</h1>
+      <div className="blogsContainer">
         {this.state.posts.map((p) => this.#renderPost(p))}
-      </>
+      </div>
     );
   }
 
@@ -26,10 +26,11 @@ class Blogs extends Component {
       const { url } = photo[0] || "";
 
       return (
-        <div key={p.node.id}>
-          <h3>{p.node.title}</h3>
-          <h4>{p.node.content}</h4>
-          <img src={url} alt="" />
+        <div key={p.node.id} className="blog">
+          <div className="content title">{p.node.title}</div>
+          <div className="content date">{p.node.displayDate}</div>
+          <div className="content">{p.node.content}</div>
+          <img src={url} alt="" className="img content" />
         </div>
       );
     }
