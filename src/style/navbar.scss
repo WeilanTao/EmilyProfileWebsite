@@ -1,0 +1,23 @@
+@use "../globalConst" as g;
+
+.navblock {
+  background-color: g.$theme_secondary;
+
+  margin: 0px 10px 0 10px;
+  padding-top: 5px;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+.navblock:hover {
+  color: rgb(194, 193, 193);
+}
+
+.navarea {
+  // 35% is exactlly the half of the remaining area!
+  padding-left: 35%;
+  padding-right: 35%;
+}
