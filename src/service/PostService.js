@@ -8,7 +8,7 @@ const PostService = {
         postsConnection {
           edges {
             node {
-              content
+             
               id
               isPublic
               title
@@ -17,10 +17,14 @@ const PostService = {
                 url
               }
               displayDate
+              content {
+                html
+              }
             }
           }
         }
       }
+      
       
     `
     );

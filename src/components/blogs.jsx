@@ -24,13 +24,17 @@ class Blogs extends Component {
     if (p.node.isPublic !== false) {
       const { photo } = p.node;
       const { url } = photo[0] || "";
-
+      const htmlString = p.node.content.html || "";
       return (
         <div key={p.node.id} className="blog">
           <div className="content title">{p.node.title}</div>
           <div className="content date">{p.node.displayDate}</div>
-          <div className="content">{p.node.content}</div>
           <img src={url} alt="" className="img content" />
+          <div
+            className="content content"
+            contentEditable="true"
+            dangerouslySetInnerHTML={{ __html: htmlString }}
+          ></div>
         </div>
       );
     }
