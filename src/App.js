@@ -13,33 +13,35 @@ import ReactCanvasNest from "react-canvas-nest";
 
 function App() {
   return (
-    <div height="1440" width="3060">
+    <div className="App">
       <ReactCanvasNest
         className="canvasNest"
         config={{
-          pointColor: " 255, 255, 255 ",
-          pointR: "0",
-          lineColor: "255,204,204",
-          lineWidth: "3",
-          count: "100",
+          pointColor: " 0,0,0 ",
+          pointR: "1",
+          lineColor: "0,0,0",
+          lineWidth: "1",
+          count: "130",
         }}
-        style={{ zIndex: -1 }}
+        style={{ zIndex: -99 }}
       />
-      <Header />
-      <NavBar />
+      <div className="Wrapper">
+        <Header />
+        <NavBar />
 
-      <div className="App">
-        <Routes>
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/blogs" element={<Blogs />} />
-          <Route path="/contactme" element={<Contactme />} />
-          <Route path="/not-found" element={<NotFound />} />
-          <Route path="/" exact element={<Home />} />
-          <Route path="*" element={<Navigate to="/not-found" replace />} />
-        </Routes>
+        <div>
+          <Routes>
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/blogs" element={<Blogs />} />
+            <Route path="/contactme" element={<Contactme />} />
+            <Route path="/not-found" element={<NotFound />} />
+            <Route path="/" exact element={<Home />} />
+            <Route path="*" element={<Navigate to="/not-found" replace />} />
+          </Routes>
+        </div>
+
+        <Footer />
       </div>
-
-      <Footer />
     </div>
   );
 }

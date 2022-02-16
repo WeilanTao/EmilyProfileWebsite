@@ -9,7 +9,6 @@ class Home extends Component {
   render() {
     return (
       <>
-        <h1>Weilan Tao</h1>
         <img src={Image} alt="emilytao" />
         <p>
           I major in Computer Engineering @ the University of Waterloo. I am a

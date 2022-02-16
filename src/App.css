@@ -1,0 +1,27 @@
+html,
+body,
+#app,
+#app > div {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* to remove the auto padding added by the browser */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  height: 100vh;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.Wrapper {
+  margin: 0 10% 0 10%;
+  height: 100vh;
+  background-color: #f595aa77;
+}
