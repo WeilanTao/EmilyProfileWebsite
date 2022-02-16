@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PorjectService from "../service/ProjectService";
-
+import "../style/projects.scss";
 class Projects extends Component {
   state = {
     projects: [],
@@ -12,10 +12,9 @@ class Projects extends Component {
 
   render() {
     return (
-      <>
-        <h1>Projects</h1>
+      <div className="projectContainer">
         {this.state.projects.map((p) => this.#renderProject(p))}
-      </>
+      </div>
     );
   }
 
@@ -23,10 +22,25 @@ class Projects extends Component {
     if (p.node.isPublic !== false) {
       return (
         <div key={p.node.id}>
-          <h3>{p.node.title}</h3>
-          <h4>{p.node.description}</h4>
-          <a href={p.node.githublink}>githublink</a>
-          <img src={p.node.coverImage.url} alt="" />
+          <div class="card" className="card">
+            <img
+              src={p.node.coverImage.url}
+              class="card-img-top"
+              alt=""
+              className="coverImg"
+            />
+            <div class="card-body" class="textArea">
+              <h5 class="card-title">{p.node.title}</h5>
+              <p class="card-text">{p.node.description}</p>
+              <a
+                href={p.node.githublink}
+                className="codeButton"
+                target="_blank"
+              >
+                Source Code
+              </a>
+            </div>
+          </div>
         </div>
       );
     }

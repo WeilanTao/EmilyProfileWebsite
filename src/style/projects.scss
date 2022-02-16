@@ -1,0 +1,34 @@
+@use "../globalConst" as g;
+
+$cardwidth: 200px;
+
+.projectContainer {
+  display: flex;
+}
+.coverImg {
+  height: 150px;
+  width: $cardwidth;
+}
+
+.card {
+  width: $cardwidth;
+  height: 40px;
+  font-size: 14px;
+  margin: 0 10px 0 10px;
+}
+
+.textArea {
+  background-color: rgba(255, 255, 255, 0.445);
+  padding: 7px;
+  height: 300px;
+}
+
+.codeButton {
+  color: white;
+  background: g.$theme_tertiary;
+  text-decoration: none;
+}
+
+a.codeButton:hover {
+  color: white;
+}
