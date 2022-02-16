@@ -11,8 +11,6 @@ class Blogs extends Component {
     this.#getPostArray();
   }
   render() {
-    // this.#getPostArray();
-
     return (
       <div className="blogsContainer">
         {this.state.posts.map((p) => this.#renderPost(p))}
@@ -28,7 +26,7 @@ class Blogs extends Component {
       return (
         <div key={p.node.id} className="blog">
           <div className="content title">{p.node.title}</div>
-          <div className="content date">{p.node.displayDate}</div>
+          {/* <div className="content date">{p.node.displayDate}</div> */}
           {/* Hey this is the if condition in react - html!!!!! */}
           {photo[0] && <img src={url} alt="" className="img content" />}
           <div

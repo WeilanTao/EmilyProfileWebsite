@@ -1,3 +1,5 @@
+@use "./globalConst" as g;
+
 html,
 body,
 #app,
@@ -23,7 +25,7 @@ body,
 .Wrapper {
   margin: 0 10% 0 10%;
   height: 100vh;
-  background-color: #f595aa77;
+  background-color: g.$theme_primary_light;
 }
 
 .content {
