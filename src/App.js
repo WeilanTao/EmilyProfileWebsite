@@ -1,5 +1,5 @@
 import logo from "./logo.svg";
-import "./App.css";
+import "./App.scss";
 import Home from "./components/home";
 import Projects from "./components/projects";
 import Blogs from "./components/blogs";
@@ -29,7 +29,7 @@ function App() {
         <Header />
         <NavBar />
 
-        <div>
+        <div className="content">
           <Routes>
             <Route path="/projects" element={<Projects />} />
             <Route path="/blogs" element={<Blogs />} />
