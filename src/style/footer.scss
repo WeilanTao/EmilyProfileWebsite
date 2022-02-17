@@ -1,11 +1,11 @@
 @use "../globalConst" as g;
 
 .footer {
-  position: fixed;
+  position: absolute;
   width: g.$main_wrapper_width;
   height: 23px;
   bottom: 0;
-  background-color: g.$theme_secondary;
+  // background-color: g.$theme_secondary;
   color: black;
   text-align: center;
   /* background-color: rgb(243, 242, 242); */

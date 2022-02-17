@@ -17,7 +17,6 @@ body,
 
 .App {
   height: 100vh;
-  overflow-x: hidden;
   margin: 0;
   padding: 0;
 }
@@ -33,7 +32,7 @@ body,
   margin: 20px 10% 0 10%;
   width: 1311px;
   height: 750px;
-  overflow-x: hidden;
+  overflow-x: auto;
   overflow-y: auto;
 
   // hide scrollbar for different browser
