@@ -25,6 +25,7 @@ body,
 .Wrapper {
   margin: 0 10% 0 10%;
   height: 100vh;
+  width: g.$main_wrapper_width; //in this way the content won't overlap when window resizing! yeah!
   background-color: g.$theme_primary_light;
 }
 
