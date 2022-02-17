@@ -30,4 +30,17 @@ body,
 
 .content {
   margin: 20px 10% 0 10%;
+  width: 1311px;
+  height: 750px;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  // hide scrollbar for different browser
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+//hide scrollbar for different browser
+.content::-webkit-scrollbar {
+  display: none;
 }

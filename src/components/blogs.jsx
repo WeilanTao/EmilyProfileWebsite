@@ -26,12 +26,12 @@ class Blogs extends Component {
 
       return (
         <div key={p.node.id} className="blog">
-          <div className="content title">{p.node.title}</div>
-          <div className="content date">{p.node.displayDate}</div>
+          <div className="blogContent title">{p.node.title}</div>
+          <div className="blogContent date">{p.node.displayDate}</div>
           {/* Hey this is the if condition in react - html!!!!! */}
           {photo[0] && <img src={url} alt="" className="img content" />}
           <div
-            className="content content"
+            className="blogContent"
             contentEditable="true"
             dangerouslySetInnerHTML={{ __html: htmlString }}
           ></div>

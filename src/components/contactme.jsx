@@ -30,7 +30,7 @@ const Contactme = () => {
         </li>
         <li>
           <a className="link" href={MyResume} download>
-            Grab MY Resume
+            Grab My Resume
           </a>
         </li>
       </ul>
