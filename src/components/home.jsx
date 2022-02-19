@@ -14,7 +14,7 @@ class Home extends Component {
         <p className="selfIntroduce">
           I major in Electrical and Computer Engineering @ the University of
           Waterloo.
-          <br></br>I am a passionate developer and I am cool with Java, c# and
+          <br></br>I am a passionate developer and I am cool with Java, C# and
           C. I love to try various cool technologies. <br></br>In my spare time,
           I enjoy digital painting, music and building personal projects.
         </p>
