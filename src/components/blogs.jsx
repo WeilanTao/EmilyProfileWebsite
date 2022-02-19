@@ -43,7 +43,7 @@ class Blogs extends Component {
   #getPostArray() {
     PostService.getPosts()
       .then((response) => {
-        const newPosts = response;
+        const newPosts = response.reverse();
         this.setState({ posts: newPosts });
       })
       .catch((err) => alert(err))
