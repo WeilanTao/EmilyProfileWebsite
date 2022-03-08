@@ -15,7 +15,8 @@ body {
 body,
 html {
   height: 100%;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
+  overflow-x: hidden;
 }
 
 input:-webkit-autofill,

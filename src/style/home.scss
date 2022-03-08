@@ -3,25 +3,19 @@
 $photosize: 300px;
 
 .selfIntroducecontainer {
-  display: grid;
-
-  grid-template-columns: 50% 50%;
+  // background-color: yellow;
 }
 
-.profilephoto {
-  grid-column: 1;
-
-  height: $photosize;
-  width: $photosize;
-  border-radius: $photosize;
-  margin-top: 20%;
-  margin-left: 30%;
-}
+// .profilephoto {
+//   height: $photosize;
+//   width: $photosize;
+//   border-radius: $photosize;
+//   margin-top: 20%;
+//   margin-left: 30%;
+// }
 
 .selfIntroduce {
-  grid-column: 2;
-  padding-top: 30%;
-  width: 30%px;
-  font-size: 20px;
+  padding: 20%;
   font-family: g.$font_primary;
+  font-size: 1.5rem;
 }

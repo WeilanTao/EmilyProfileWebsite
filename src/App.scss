@@ -22,17 +22,29 @@ body,
 }
 
 .Wrapper {
+  display: flex;
   margin: 0 10% 0 10%;
-  height: 100vh;
-  width: g.$main_wrapper_width; //in this way the content won't overlap when window resizing! yeah!
+  height: 100%;
+  width: 80%;
   background-color: g.$theme_primary_light;
+  // min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  flex: 1;
+  overflow: visible;
 }
 
 .content {
-  margin: 20px 10% 0 10%;
-  width: 1311px;
-  height: 750px;
-  overflow-x: auto;
+  // background-color: green;
+  margin: 5px 15% 5px 15%;
+  // width: 1000px;
+  // min-height: 60px;
+  // overflow-x: auto;
+  padding-top: 3px;
+  height: 90%; //in order to adjust the space-between value between elements, you have to resize the elements themselves to modify the space in between
+  width: 80%;
   overflow-y: auto;
 
   // hide scrollbar for different browser

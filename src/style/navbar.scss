@@ -3,9 +3,9 @@
 .navblock {
   background-color: g.$theme_secondary;
 
-  margin: 0px 10px 0 10px;
+  margin: 0px 5px 0 5px; //with this margin value, the nav bar won't change line even the browser window is very narrow lol
   padding-top: 5px;
-  width: 100px;
+  width: 90px;
   height: 40px;
   text-align: center;
   text-decoration: none;
@@ -17,7 +17,8 @@
 }
 
 .navarea {
-  // 35% is exactlly the half of the remaining area!
-  padding-left: 35%;
-  padding-right: 35%;
+  // background-color: red;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-flow: nowrap;
 }

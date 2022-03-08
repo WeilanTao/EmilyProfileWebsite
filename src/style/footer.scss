@@ -1,12 +1,12 @@
 @use "../globalConst" as g;
 
 .footer {
-  position: absolute;
-  width: g.$main_wrapper_width;
+  // background-color: yellow;
+  width: 100%;
   height: 23px;
   bottom: 0;
-  // background-color: g.$theme_secondary;
   color: black;
   text-align: center;
+  overflow: hidden; //this would remove the odd extra space at the end of the page, especially firefox
   /* background-color: rgb(243, 242, 242); */
 }
