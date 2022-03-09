@@ -1,7 +1,14 @@
 import React, { Component } from "react";
+import "../style/notfound.scss";
 
 const NotFound = () => {
-  return <h1>Oppps...You've reached Not Found</h1>;
+  return (
+    <>
+      <div className="notfoundPage">
+        <h1>oops...You've reached Not Found</h1>
+      </div>
+    </>
+  );
 };
 
 export default NotFound;
