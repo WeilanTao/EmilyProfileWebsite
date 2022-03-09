@@ -22,3 +22,17 @@
   flex-wrap: nowrap;
   flex-flow: nowrap;
 }
+
+@media only screen and (max-width: 500px) {
+  .navblock {
+    background-color: g.$theme_secondary;
+
+    margin: 0px 5px 0 5px; //with this margin value, the nav bar won't change line even the browser window is very narrow lol
+    padding-top: 5px;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+  }
+}

@@ -37,3 +37,34 @@
 .date {
   font-weight: bold;
 }
+
+@media only screen and (max-width: 501px) {
+  .blogsContainer {
+    width: 100%;
+    margin: 0;
+    display: inline-block;
+  }
+
+  .blog {
+    border-width: 0px;
+    border-color: g.$theme_secondary;
+    border-style: solid;
+    border-radius: 3px;
+    background-color: g.$theme_tertiary_light;
+    margin: 0 0 10px 0;
+    padding: 3px;
+    height: fit-content;
+  }
+  .img {
+    max-width: 270px;
+    max-height: 270px;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+  }
+  .title {
+    font-weight: bold;
+    font-size: 15px;
+  }
+}
