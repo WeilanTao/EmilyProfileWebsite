@@ -46,7 +46,7 @@ body,
   height: 90%; //in order to adjust the space-between value between elements, you have to resize the elements themselves to modify the space in between
   width: 80%;
   overflow-y: auto;
-
+  overflow-x: hidden;
   // hide scrollbar for different browser
   scrollbar-width: none;
   -ms-overflow-style: none;
