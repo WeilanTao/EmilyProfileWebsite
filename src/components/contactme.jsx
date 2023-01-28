@@ -25,7 +25,7 @@ class Contactme extends Component {
           <li>
             <a
               className="link"
-              href="https://github.com/WeilanTao"
+                        href="https://www.linkedin.com/in/weilan-emily-tao"
               target="_blank"
             >
               LinkedIn
