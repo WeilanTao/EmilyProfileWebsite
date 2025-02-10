@@ -12,40 +12,7 @@ class Contactme extends Component {
   render() {
     return (
       <>
-        <ul className="ulList">
-          <li>
-            <a
-              className="link"
-{/*               href="https://github.com/WeilanTao"
-              target="_blank" */}
-            >
-              Github Account
-            </a>
-          </li>
-          <li>
-            <a
-              className="link"
-{/*                         href="https://www.linkedin.com/in/weilan-emily-tao" */}
-              target="_blank"
-            >
-              LinkedIn
-            </a>
-          </li>
-          <li>
-              Email Me
-            </a>
-          </li>
-          <li>
-            <a
-              className="link"
-{/*               href={this.state.resumeUrl}
-              target="_blank" */}
-              download
-            >
-              Grab My Resume
-            </a>
-          </li>
-        </ul>
+        
       </>
     );
   }
