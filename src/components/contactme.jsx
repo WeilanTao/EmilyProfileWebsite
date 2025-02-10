@@ -16,8 +16,8 @@ class Contactme extends Component {
           <li>
             <a
               className="link"
-              href="https://github.com/WeilanTao"
-              target="_blank"
+{/*               href="https://github.com/WeilanTao"
+              target="_blank" */}
             >
               Github Account
             </a>
@@ -25,22 +25,21 @@ class Contactme extends Component {
           <li>
             <a
               className="link"
-                        href="https://www.linkedin.com/in/weilan-emily-tao"
+{/*                         href="https://www.linkedin.com/in/weilan-emily-tao" */}
               target="_blank"
             >
               LinkedIn
             </a>
           </li>
           <li>
-            <a className="link" href="mailto:twlemily@hotmail.ca">
               Email Me
             </a>
           </li>
           <li>
             <a
               className="link"
-              href={this.state.resumeUrl}
-              target="_blank"
+{/*               href={this.state.resumeUrl}
+              target="_blank" */}
               download
             >
               Grab My Resume
