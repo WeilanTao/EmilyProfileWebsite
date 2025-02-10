@@ -18,20 +18,6 @@ class Contactme extends Component {
               Github Account
             </a>
           </li>
-          <li>
-            <a>
-              LinkedIn
-            </a>
-          </li>
-          <li>
-              Email Me
-            </a>
-          </li>
-          <li>
-            <a>
-              Grab My Resume
-            </a>
-          </li>
         </ul>
       </>
     );
