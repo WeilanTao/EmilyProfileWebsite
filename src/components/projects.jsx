@@ -36,6 +36,7 @@ class Projects extends Component {
                 href={p.node.githublink}
                 className="codeButton"
                 target="_blank"
+                rel="noreferrer"
               >
                 Source Code
               </a>
