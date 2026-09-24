@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Projects from "./projects";
 import { Link } from "react-router-dom";
 import "../style/navbar.scss";

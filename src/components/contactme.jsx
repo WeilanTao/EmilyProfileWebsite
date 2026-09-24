@@ -18,6 +18,7 @@ class Contactme extends Component {
               className="link"
               href="https://github.com/WeilanTao"
               target="_blank"
+              rel="noreferrer"
             >
               Github Account
             </a>
@@ -27,6 +28,7 @@ class Contactme extends Component {
               className="link"
                         href="https://www.linkedin.com/in/weilan-emily-tao"
               target="_blank"
+              rel="noreferrer"
             >
               LinkedIn
             </a>
@@ -41,6 +43,7 @@ class Contactme extends Component {
               className="link"
               href={this.state.resumeUrl}
               target="_blank"
+              rel="noreferrer"
               download
             >
               Grab My Resume

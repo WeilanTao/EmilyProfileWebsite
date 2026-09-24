@@ -1,4 +1,3 @@
-import React, { Component } from "react";
 import "../style/notfound.scss";
 
 const NotFound = () => {

@@ -1,4 +1,3 @@
-import React, { Component } from "react";
 import PostService from "../service/PostService";
 import "../style/blog.scss";
 
