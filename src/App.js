@@ -8,22 +8,43 @@ import { Route, Routes, Navigate } from "react-router-dom";
 import NavBar from "./components/navbar";
 import Footer from "./components/footer";
 import Header from "./components/header";
-import ReactCanvasNest from "react-canvas-nest";
+import CanvasNest from "canvas-nest.js";
+import React, { useEffect, useRef } from "react";
 
 function App() {
+  const canvasRef = useRef(null);
+
+  useEffect(() => {
+    const config = {
+      pointColor: "211,211,211",
+      pointR: 1,
+      lineColor: "211,211,211",
+      lineWidth: 1,
+      count: 130,
+    };
+
+    const cn = new CanvasNest(canvasRef.current, config);
+
+    return () => {
+      cn.destroy();
+    };
+  }, []);
+
   return (
     <div className="App">
-      <ReactCanvasNest
+      <div
+        ref={canvasRef}
         className="canvasNest"
-        config={{
-          pointColor: " 0,0,0 ",
-          pointR: "1",
-          lineColor: "0,0,0",
-          lineWidth: "1",
-          count: "130",
+        style={{
+          position: "fixed",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          zIndex: -99,
         }}
-        style={{ zIndex: -99 }}
       />
+
       <div className="Wrapper">
         <Header />
         <NavBar />
@@ -34,7 +55,7 @@ function App() {
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/contactme" element={<Contactme />} />
             <Route path="/not-found" element={<NotFound />} />
-            <Route path="/" exact element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="*" element={<Navigate to="/not-found" replace />} />
           </Routes>
         </div>
