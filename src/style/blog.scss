@@ -1,8 +1,8 @@
 @use "../globalConst" as g;
 
 .blogsContainer {
-  width: 65%;
-  margin: 0 20% 0 20%;
+  width: g.$container_width;
+  margin: g.$container_margin;
   display: inline-block;
 }
 

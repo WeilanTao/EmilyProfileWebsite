@@ -6,9 +6,10 @@ $cardwidth: 170px;
   display: flex;
   flex-flow: wrap;
   // background-color: blue;
-  width: 100%;
   height: 100%;
   overflow-y: auto;
+  width: g.$container_width;
+  margin: g.$container_margin;
 }
 .coverImg {
   max-width: $cardwidth;

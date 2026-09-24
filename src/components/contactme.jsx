@@ -34,7 +34,7 @@ class Contactme extends Component {
             </a>
           </li>
           <li>
-            <a className="link" href="mailto:twlemily@hotmail.ca">
+            <a className="link" href="mailto:twlemily10@gmail.com">
               Email Me
             </a>
           </li>

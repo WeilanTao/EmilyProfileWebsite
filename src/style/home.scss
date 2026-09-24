@@ -18,4 +18,7 @@ $photosize: 300px;
   padding: 10%;
   font-family: g.$font_primary;
   font-size: 1.5rem;
+  width: g.$container_width;
+  margin: g.$container_margin;
+  display: inline-block;
 }

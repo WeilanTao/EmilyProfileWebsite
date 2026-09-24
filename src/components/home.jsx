@@ -12,11 +12,13 @@ class Home extends Component {
       <div className="selfIntroducecontainer">
         {/* <img src={Image} alt="emilytao" className="profilephoto" /> */}
         <p className="selfIntroduce">
-          I major in Electrical and Computer Engineering @ the University of
-          Waterloo.
-          <br></br>I am a passionate developer and I am cool with Java, C# and
-          C. I love to try various technologies. <br></br>In my spare time, I
-          enjoy digital painting, music and building personal projects.
+          Hi👋 Welcome to my website 😊!
+          <br></br>
+          I graduated from the Computer Engineering program at the University of Waterloo.
+          <br></br>I am a passionate software engineer with extensive experience in Java, Python, C++. 
+          <br></br>I enjoy exploring new technologies and I am committed to designing and implementing robust software. 
+          <br></br>In my spare time, I enjoy digital painting 🎨, music 🎵 and reading 📖.
+          <br></br>Feel free to reach out to me 🤝.
         </p>
       </div>
     );

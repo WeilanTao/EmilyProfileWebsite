@@ -2,11 +2,13 @@
 
 .navblock {
   background-color: g.$theme_secondary;
-
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
   margin: 0px 5px 0 5px; //with this margin value, the nav bar won't change line even the browser window is very narrow lol
   padding-top: 5px;
-  width: 90px;
-  height: 40px;
+  width: 80px;
+  height: 35px;
   text-align: center;
   text-decoration: none;
   color: white;

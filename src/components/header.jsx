@@ -3,7 +3,7 @@ import "../style/header.scss";
 const Header = () => {
   return (
     <>
-      <h1 className="header">Emily Weilan Tao</h1>
+      <h1 className="header">Weilan Tao</h1>
     </>
   );
 };

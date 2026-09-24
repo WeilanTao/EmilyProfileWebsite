@@ -19,7 +19,7 @@ const NavBar = () => {
         </Link>
 
         <Link to="/contactme" class="nav-link " className="navblock">
-          <div class="nav_button">Contact Me</div>
+          <div class="nav_button">Contact</div>
         </Link>
       </nav>
     </div>
