@@ -15,12 +15,11 @@ function App() {
   const canvasRef = useRef(null);
 
   useEffect(() => {
+    const isMobile = window.innerWidth <= 1000;
     const config = {
-      pointColor: "211,211,211",
-      pointR: 1,
-      lineColor: "211,211,211",
-      lineWidth: 1,
-      count: 130,
+      color: '0,0,0',
+      opacity: 0.7,
+      count: isMobile ? 20: 150,
     };
 
     const cn = new CanvasNest(canvasRef.current, config);
