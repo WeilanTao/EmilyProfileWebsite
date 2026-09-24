@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Image from "../resource/twl.jpg";
+// import Image from "../resource/twl.jpg";
 import "../style/home.scss";
 
 class Home extends Component {
@@ -10,7 +10,7 @@ class Home extends Component {
   render() {
     return (
       <div className="selfIntroducecontainer">
-        <img src={Image} alt="emilytao" className="profilephoto" />
+        {/* <img src={Image} alt="emilytao" className="profilephoto" /> */}
         <p className="selfIntroduce">
           I major in Electrical and Computer Engineering @ the University of
           Waterloo.
